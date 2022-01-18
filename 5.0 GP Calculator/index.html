@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator - Ameer Bamigbayan</title>
+    <link rel="shortcut icon" type="image/png" href="favicon2.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome.css"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="effect-wrap">
+            <i class="fa-solid fa-plus effect effect-1"></i>
+            <i class="fa-solid fa-plus effect effect-2"></i>
+             <i class="fab fa-plus effect effect-3"></i>
+       
+          </div>
+        <div class="container">
+          <div class="screen">
+            <div class="screen-body">
+    <div class="wrapper">
+        <h1>5.0 GPA Calculator</h1>
+        <div class="form-row">
+            <div class="col">
+                 <h6>Course</h6>
+                <input id="course-code" class="form-control" type="text" placeholder="Course Code">
+            </div>
+          
+            <div class="col">
+               <h6>Grade</h6>
+                <select id="grade" class="form-control">
+                    <option value="">Grade</option>
+                    <option value="5">A</option>
+                    <option value="4">B</option>
+                    <option value="3">C</option>
+                    <option value="2">D</option>
+                    <option value="1">E</option>
+                    <option value="0">F</option>
+                </select>
+            </div>
+           
+              <div class="col">
+                  <h6>Unit</h6>
+                <input id="unit-load" class="form-control" type="number" placeholder="Unit" min="1" max="15">
+            </div>
+            <div class="col">
+                <h6><br></h6>
+                <input id="add" class="btn btn-primary" type="button" value="Add">
+
+            </div>
+        </div>
+        <table id="table" class="table table-bordered display-none">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Unit</th>
+                    <th>Grade</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tbody">
+        
+            </tbody>
+            <tfoot id="tfoot">
+        
+            </tfoot>
+        </table>
+        <div class="row">
+            <div class="col">
+                <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calculate GPA">
+            </div>
+            <div class="col">
+            <input id="clear" class="btn btn-warning display-none" type="button" value="Clear">
+            </div>
+        </div>
+   <br>
+    <div class="text">
+         <p>Note: Use the "Calculate GPA" button after adding another course to re-calculate your GPA.
+    <p>If you found this GPA tool useful, please share it with any students that might also find it useful.<br>
+
+        
+        
+        F (Fail) is between 0 and 39.<br>
+        E (Poor) is between 40 and 44.<br>
+        D (Fair)is between 45 and 49.<br>
+        C (Satisfactory)is between 50 and 59.<br>
+        B (Good)is between 60 and 69.<br>
+        A (Excellent)is between 70 and 100.</p>
+        <footer>
+
+        <p>Built with &#10084 by<a href="https://ameerbamigbayan.com.ng" target="_blank"><span> Ameer Bamigbayan</span></a></p>
+    </footer>
+</div> </div>
+</div> </div>
+</div> </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
